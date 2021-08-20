@@ -55,7 +55,7 @@ module vtc
 	end
 
 //
-//
+// vsync and hsync counters
 //
 	always@(posedge i_clk) begin
 		if(!i_rstn) begin
@@ -78,7 +78,7 @@ module vtc
 	end
 
 //
-//
+// output combinatorial logic
 //
     assign o_hsync  = ((counterX >= ACTIVE_X + HSYNC_FP) && 
     	               (counterX <  ACTIVE_X + HSYNC_FP + HSYNC_WIDTH));
